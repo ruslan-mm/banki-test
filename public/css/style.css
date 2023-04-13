@@ -1,0 +1,312 @@
+@font-face {
+    font-family: 'Merriweather';
+    src: local('Merriweather-Bold'), url(../fonts/Merriweather-Bold.woff2) format('woff2');
+    font-weight: 700;
+    font-style: initial;
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    src: local('Merriweather-Bold'), url(../fonts/Merriweather-Light.woff2) format('woff2');
+    font-weight: 300;
+    font-style: initial;
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    src: local('Merriweather-Bold'), url(../fonts/Merriweather-Regular.woff2) format('woff2');
+    font-weight: 400;
+    font-style: initial;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    font-family: Merriweather, sans-serif;
+}
+
+
+/* glob-style */
+
+
+
+.container {
+    max-width: 1276px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.flex {
+    display: flex;
+}
+
+.list-reset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+p {
+    margin: 0;
+}
+
+.btn-reset {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+/* header */
+
+.header {
+    padding: 30px 0;
+    border-bottom: 1px solid #E1E1E1;
+}
+
+.header-container {
+    padding: 0 60px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav {
+    max-width: 542px;
+    margin-left: 96px;
+    flex-grow: 1;
+}
+
+.header-list {
+    margin-right: 5px;
+    justify-content: space-between;
+}
+
+.header-item {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #343030;
+}
+
+.srch {
+    max-width: 416px;
+}
+
+.input-search {
+    width: 294px;
+    padding: 13px 16px;
+    border: 1px solid #e1e1e1;
+}
+
+.input-search:focus {
+    outline: none;
+}
+
+.input-search::placeholder {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.btn-srch {
+    padding: 13px 36px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    color: #FFFFFF;
+    background-color: #403432;
+    border-radius: 0px;
+}
+
+/* main */
+
+.main {
+    padding-bottom: 320px;
+}
+
+.text-h2 {
+    padding-top: 45px;
+    padding-bottom: 39px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #343030;
+}
+
+.wrap-list {
+    flex-wrap: wrap;
+}
+
+.wrapp-item {
+    max-width: 280px;
+    max-height: 328px;
+    border: 1px solid #E1E1E1
+}
+
+.opacity {
+    opacity: .5;
+}
+
+.wrapp-item:not(:last-child) {
+    margin-right: 32px;
+}
+
+.wrapp-title {
+    padding: 20px 24px 23px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #343030;
+}
+
+.wrap-prices {
+    padding-bottom: 24px;
+    align-items: center;
+}
+
+.wrap-price {
+    padding: 0px 21px 0px 24px;
+
+}
+
+.price-off {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    color: #A0A0A0;
+}
+
+.price-on {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #343030;
+}
+
+.btn-click {
+    padding: 14px 30px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    color: #F4F6F9;
+    background-color: #382E2B;
+}
+
+.btn-click-on {
+    padding: 13px 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    color: #F4F6F9;
+    background-color: #5B3A32;
+}
+
+.wrap-sold {
+    padding: 12px 24px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #343030;
+}
+
+/* footer */
+
+footer {
+    margin-top: auto;
+    background: #ECEAEA
+}
+
+.footer-container {
+    padding: 38px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-tel {
+    margin-right: 51px;
+}
+
+.footer-tel a {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #555555;
+}
+
+.footer-tel a svg {
+    margin-right: 8px;
+}
+
+
+.footer-loc a {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #555555;
+}
+
+.footer-loc a svg {
+    margin-right: 8px;
+}
+
+.footer-nav {
+    max-width: 542px;
+    margin-left: 96px;
+    padding: 38px;
+    flex-grow: 1;
+}
+
+.footer-list {
+    justify-content: space-between;
+}
+
+.footer-item {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #343030;
+}
